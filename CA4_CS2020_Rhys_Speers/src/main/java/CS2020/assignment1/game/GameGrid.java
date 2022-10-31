@@ -11,6 +11,7 @@ public class GameGrid extends AbstractGameGrid{
         noOfShips = noOfShips;
 
         initializeGrid();
+        generateShips(noOfShips);
     }
 
     public void initializeGrid (){
@@ -27,6 +28,10 @@ public class GameGrid extends AbstractGameGrid{
     }
 
     public void generateShips (int numberOfShips){
-
+        ships = new BattleShip[numberOfShips];
+        for(int i = 0; i < numberOfShips; i++){
+            BattleShip newShip = new BattleShip("Ship " + Integer.toString(i+1));
+            ships[i] = newShip;
+        }
     }
 }
