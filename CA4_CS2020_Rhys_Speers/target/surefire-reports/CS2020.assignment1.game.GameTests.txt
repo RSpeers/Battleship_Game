@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: CS2020.assignment1.game.GameTests
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.035 s <<< FAILURE! - in CS2020.assignment1.game.GameTests
-t2_1(CS2020.assignment1.game.GameTests)  Time elapsed: 0.002 s  <<< FAILURE!
-java.lang.AssertionError: [47m[30mT2.1: Are you initialising the GameGrid with . ? Does it extend teh AbstractGameGrid?   [0mjava.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
-	at CS2020.assignment1.game.GameTests.t2_1(GameTests.java:173)
-
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in CS2020.assignment1.game.GameTests

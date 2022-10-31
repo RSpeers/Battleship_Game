@@ -6,9 +6,9 @@ public class GameGrid extends AbstractGameGrid{
     protected int noOfShips = 0;
 
     GameGrid(int width, int height, int noOfShips){
-        this.width = width;
-        this.height = height;
-        this.noOfShips = noOfShips;
+        width = width;
+        height = height;
+        noOfShips = noOfShips;
 
         initializeGrid();
     }
