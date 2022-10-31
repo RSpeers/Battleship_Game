@@ -21,15 +21,22 @@ public class BattleShip extends AbstractBattleShip{
     }
 
     public boolean checkAttack (int row,int column){
-        return false;
+        if(shipCoordinates[0][0] == row && shipCoordinates[0][1] == column && hits < 3){
+            hits++;
+            return true;
+        }
+        else{
+            return false;
+        }
+
     }
 	
 	public String getName(){
-        return "";
+        return name;
     }
 
 	public int getHits() {
-        return 0;
+        return hits;
     }
 	
 	public String getShipOrientation(){
@@ -37,15 +44,15 @@ public class BattleShip extends AbstractBattleShip{
     } 
 	
 	public void setHits(int numberOfHits){
-       
+       hits = numberOfHits;
     } 
 	
 	public int[][] getShipCoordinates(){
-        return null;
+        return shipCoordinates;
     } 
 	
 	public void setShipCoordinates(int [][] coordinates){
-        
+        shipCoordinates = coordinates;
     } 
 
 }
