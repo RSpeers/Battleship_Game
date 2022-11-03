@@ -385,7 +385,7 @@ public class GameTests {
 	    }	
 		
 	}
-	/*
+	
 	@Test
 	public void t3_1() {
 	       
@@ -413,7 +413,7 @@ public class GameTests {
 	    }	
 		
 	}
-	
+	/*
 	@Test
 	public void t3_3() {
 	       
