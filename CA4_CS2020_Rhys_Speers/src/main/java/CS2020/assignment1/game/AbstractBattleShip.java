@@ -1,7 +1,5 @@
 package CS2020.assignment1.game;
 
-
-
 public abstract class AbstractBattleShip {
     
 	protected String name;
