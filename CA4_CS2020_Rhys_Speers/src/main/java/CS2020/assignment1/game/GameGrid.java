@@ -40,7 +40,7 @@ public class GameGrid extends AbstractGameGrid{
         Random rnd = new Random();
 
         //generate random first coordinant and add to temp array
-        int x = rnd.nextInt(width - 1);
+        int x = rnd.nextInt(width - 2);
         int y = rnd.nextInt(height - 2);
         tempCoords[0][0] = x;
         tempCoords[0][1] = y;
