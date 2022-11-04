@@ -6,7 +6,7 @@ public class OpponentGameGrid extends GameGrid{
     }
     
     public void printGrid(){
-        System.out.println("Players Grid");
+        System.out.println("Opponent Grid");
         for(int i = 0; i < width; i++){
             for(int j = 0; j < height; j++){
                 if(gameGrid[i][j] == "." || gameGrid[i][j] == "*"){

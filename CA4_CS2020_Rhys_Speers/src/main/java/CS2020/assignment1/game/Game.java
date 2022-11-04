@@ -9,6 +9,10 @@ public class Game implements GameControls{
         //instantiating new gamegrid objects using values passed in
         playerGrid = new PlayerGameGrid(width, height, noOfShips);
         opponentGrid =new OpponentGameGrid(width, height, noOfShips);
+
+        //print initial grids
+        playerGrid.printGrid();
+        opponentGrid.printGrid();
     }
 
     public void playRound (String input){
@@ -17,6 +21,7 @@ public class Game implements GameControls{
         int y = Integer.parseInt(input.substring(2,3));
 
         //player's shot first
+        System.out.println("Player is attacking: ");
         if(opponentGrid.gameGrid[x][y] == "*"){
             //Shot hit
             opponentGrid.gameGrid[x][y] = "X";
@@ -33,6 +38,7 @@ public class Game implements GameControls{
             System.out.println("MISS!!!");
         }
         //print updated version of opponent's grid
+        System.out.println("Opponent Grid: ");
         opponentGrid.printGrid();
 
         //Opponents shot is the same as players but coords are random
@@ -40,6 +46,7 @@ public class Game implements GameControls{
         x = rnd.nextInt(playerGrid.width - 2);
         y = rnd.nextInt(playerGrid.height - 2);
 
+        System.out.println("Opponent is attacking: ");
         if(playerGrid.gameGrid[x][y] == "*"){
             //opponent shot hit
             playerGrid.gameGrid[x][y] = "X";
@@ -56,12 +63,13 @@ public class Game implements GameControls{
             System.out.println("MISS!!!");
             }
             //print updated version of player's grid
+            System.out.println("Player grid: ");
             playerGrid.printGrid();
     }
 
 	//checks for victory conditions and prints message
     //returns true if anyone wins
-	public boolean checkVictory (){
+	public boolean checkVictory(){
         int noOfSunkShips = 0;
         boolean opponentWins = false;
         boolean playerWins = false;
